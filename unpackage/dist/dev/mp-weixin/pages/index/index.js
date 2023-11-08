@@ -102,11 +102,6 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  if (!_vm._isMounted) {
-    _vm.e0 = function ($event) {
-      _vm.show = !_vm.show
-    }
-  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -152,13 +147,10 @@ exports.default = void 0;
 //
 //
 //
-//
-//
-//
 var _default = {
   data: function data() {
     return {
-      show: false,
+      show: true,
       title: 'Hello'
     };
   },

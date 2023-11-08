@@ -1,9 +1,6 @@
 <template>
 	<view class="content">
-		<image v-if="show" class="logo animated rubberBand" src="/static/logo.png"></image>
-		<view class="text-area">
-			<text class="title" @tap="show = !show">{{title}}</text>
-		</view>
+		<view class="iconfont icon-wode"></view>
 	</view>
 </template>
 
@@ -11,7 +8,7 @@
 	export default {
 		data() {
 			return {
-				show: false,
+				show: true,
 				title: 'Hello'
 			}
 		},
