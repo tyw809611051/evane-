@@ -1,0 +1,1 @@
+<view><swiper autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}"><block wx:for="{{resdata}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><swiper-item><view class="swiper-item"><image style="height:350rpx;" src="{{item.src}}" lazy-load="{{true}}" mode></image></view></swiper-item></block></block></swiper></view>
