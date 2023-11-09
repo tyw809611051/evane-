@@ -18,4 +18,5 @@
 	@import "common/animate.min.css";
 	@import "common/icon.css";
 	@import "common/common.css";
+	@import "common/zcm-main.css";
 </style>

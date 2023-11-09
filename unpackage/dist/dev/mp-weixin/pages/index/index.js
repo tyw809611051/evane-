@@ -141,17 +141,24 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = void 0;
-//
-//
-//
-//
-//
-//
+var swiperImage = function swiperImage() {
+  __webpack_require__.e(/*! require.ensure | component/index/swiper-image */ "component/index/swiper-image").then((function () {
+    return resolve(__webpack_require__(/*! @/component/index/swiper-image.vue */ 66));
+  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
+};
 var _default = {
+  components: {
+    swiperImage: swiperImage
+  },
   data: function data() {
     return {
-      show: true,
-      title: 'Hello'
+      swipers: [{
+        src: "../../static/images/bg.jpg"
+      }, {
+        src: "../../static/images/bg.jpg"
+      }, {
+        src: "../../static/images/bg.jpg"
+      }]
     };
   },
   onLoad: function onLoad() {},
