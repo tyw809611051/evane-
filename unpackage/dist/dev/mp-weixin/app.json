@@ -44,5 +44,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "divider": "/component/common/divider"
+  }
 }

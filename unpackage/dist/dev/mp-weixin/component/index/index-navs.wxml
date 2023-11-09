@@ -1,0 +1,1 @@
+<view><view class="row w-100 j-center m-2"><block wx:for="{{resdata}}" wx:for-item="item" wx:for-index="index" wx:key="index"><block><view class="span-4 j-center a-center d-flex flex-column py-2"><image style="width:60rpx;height:60rpx;" src="{{item.src}}" mode="widthFix"></image><text class="font-sm">{{item.text}}</text></view></block></block></view></view>

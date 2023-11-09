@@ -1,5 +1,8 @@
 import App from './App'
 
+// 引入全局组件
+import divider from "@/component/common/divider.vue"
+Vue.component('divider',divider)
 // #ifndef VUE3
 import Vue from 'vue'
 import './uni.promisify.adaptor'

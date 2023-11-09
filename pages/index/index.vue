@@ -1,49 +1,46 @@
 <template>
 	<view class="content">
 		<!-- 轮播图组件 -->
-		<swiper-image :resdata="swipers" style="width: 100%;"></swiper-image>
+		<swiper-image :resdata="swipers"></swiper-image>
 		
 		<!-- 首页分类 -->
-		<view class="row w-100 j-center m-2">
-			<view class="span-4 j-center a-center d-flex flex-column py-2">
-				<image src="../../static/images/indexnav/1.png"
-				 style="width: 60upx;height: 60upx;"
-				 mode="widthFix"></image>
-				 <text class="font-sm">新品发布</text>
+		<index-navs :resdata="indexnavs"></index-navs>
+		
+		<!-- 分割线 -->
+		<divider></divider>
+		
+		<!-- 三图广告 -->
+		<three-adv :resdata="threeAdv"></three-adv>
+		
+		<!-- 分割线 -->
+		<divider></divider>
+		
+		<!-- 基础卡片组件 -->
+		<view class="card" style="width: 100%;">
+			<!-- 标题 -->
+			<view class="font-md font-weight p-2 border-bottom main-border-color">
+				每日精选
 			</view>
-			<view class="span-4 j-center a-center d-flex flex-column py-2">
-				<image src="../../static/images/indexnav/1.png"
-				 style="width: 60upx;height: 60upx;"
-				 mode="widthFix"></image>
-				 <text class="font-sm">新品发布</text>
+			<!-- body -->
+			<view class="">
+				<image src="../../static/images/demo/demo4.jpg" 
+				
+				mode="widthFix"></image>
 			</view>
-			<view class="span-4 j-center a-center d-flex flex-column py-2">
-				<image src="../../static/images/indexnav/1.png"
-				 style="width: 60upx;height: 60upx;"
-				 mode="widthFix"></image>
-				 <text class="font-sm">新品发布</text>
-			</view>
-			<view class="span-4 j-center a-center d-flex flex-column py-2">
-				<image src="../../static/images/indexnav/1.png"
-				 style="width: 60upx;height: 60upx;"
-				 mode="widthFix"></image>
-				 <text class="font-sm">新品发布</text>
-			</view>
-			<view class="span-4 j-center a-center d-flex flex-column py-2">
-				<image src="../../static/images/indexnav/1.png"
-				 style="width: 60upx;height: 60upx;"
-				 mode="widthFix"></image>
-				 <text class="font-sm">新品发布</text>
-			</view>
+			
 		</view>
 	</view>
 </template>
 
 <script>
 	import swiperImage from "@/component/index/swiper-image.vue";
+	import indexNavs from "@/component/index/index-navs.vue";
+	import threeAdv from "@/component/index/three-adv.vue"
 	export default {
 		components:{
-			swiperImage
+			swiperImage,
+			indexNavs,
+			threeAdv
 		},
 		data() {
 			return {
@@ -56,7 +53,30 @@
 					{
 						src: "../../static/images/bg.jpg"
 					}
-				]
+				],
+				indexnavs:[
+					{src:"../../static/images/indexnav/1.png",text:"新品发布3"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布2"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布3"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布"},
+					{src:"../../static/images/indexnav/1.png",text:"新品发布2"}
+				],
+				threeAdv:{
+					big: {
+						src:"../../static/images/demo/demo1.jpg"
+					},
+					smalltop:{
+						src:"../../static/images/demo/demo2.jpg"
+					},
+					smallbottom:{
+						src:"../../static/images/demo/demo3.jpg"
+					}
+				}
 
 			}
 		},
@@ -70,6 +90,9 @@
 </script>
 
 <style>
+	swiper-image,divider,index-navs,three-adv {
+		width: 100%;
+	}
 	.content {
 		display: flex;
 		flex-direction: column;

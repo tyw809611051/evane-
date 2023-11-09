@@ -1,4 +1,7 @@
 
+swiper-image,divider,index-navs,three-adv {
+	width: 100%;
+}
 .content {
 	display: flex;
 	flex-direction: column;
