@@ -1,5 +1,5 @@
 
-swiper-image,divider,index-navs,three-adv {
+swiper-image,divider,index-navs,three-adv,card {
 	width: 100%;
 }
 .content {
